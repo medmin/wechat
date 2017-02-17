@@ -21,10 +21,10 @@ $ddH2O = $stdddH2OVol * $reactionNumber ;
 $totalVol = $stdTotalVol * $reactionNumber ;
 
 if ( $machineType == 'typeA' || $machineType == 'typeB' || $machineType == 'typeC') {
-    $result =[$qPCRMixVol, $Primer1Vol, $Primer2Vol, $cDNAVol, $ROXVol, $ddH2O, $totalVol, $machineType] ;
+    $result =[$qPCRMixVol, $Primer1Vol, $Primer2Vol, $cDNAVol, $ROXVol, $ddH2O, $totalVol] ;
 }
 else {
-    $result = [0, 0, 0, 0, 0, 0, 0, $machineType];
+    $result = [0, 0, 0, 0, 0, 0, 0];
 }
 
 echo json_encode($result);
