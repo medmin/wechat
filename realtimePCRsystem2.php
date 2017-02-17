@@ -19,29 +19,30 @@
 </head>
 <body>
 <div>
-    <form id="RealTimePCRForm" method="post" action="testCalculator.php">
+    <form id="RealTimePCRForm" method="post" action="realtimePCRsystemCalculator2.php">
+
         <h2>Choose the type of your PCR machine: </h2>
         <div>
             <label>
                 <input type="radio"  value="typeA" name="PCRMachineType">
-                <span>BioRad iCycler, MyiQ, iQ5, CFX-96,CFX-384, Eppendorf Mastercycler realplex, Roche LightCycler 480,LightCycler 2.0</span>
+                <span>BioRad iCycler, MyiQ, iQ5, CFX-96,CFX-384, <br>Eppendorf Mastercycler realplex, Roche LightCycler 480,LightCycler 2.0</span>
             </label>
             <br>
             <label>
                 <input type="radio"  value="typeB" name="PCRMachineType">
-                <span>ABI PRISM 7000/7300/7700/7900H and 7900HTFast, ABI Step One, ABI Step One Plus</span>
+                <span>ABI PRISM 7000/7300/7700/7900H and 7900HTFast, <br>ABI Step One, ABI Step One Plus</span>
             </label>
             <br>
             <label>
                 <input type="radio"  value="typeC" name="PCRMachineType">
-                <span>ABI 7500，7500 Fast, ABI Viia7, Stratagene Mx3000P, Mx3005P, Mx4000</span>
+                <span>ABI 7500，7500 Fast, ABI Viia7, <br>Stratagene Mx3000P, Mx3005P, Mx4000</span>
             </label>
             <br>
-<!--            <label>-->
-<!--                <input type="radio"  value="default" name="PCRMachineType"><span>default</span>-->
-<!--            </label>-->
+            <br>
         </div>
+
         <p id="PCRmachineWarning"></p>
+
         <h2>Fill the following form: </h2>
         <table border="1">
             <tr>
@@ -87,6 +88,7 @@
         </table>
     </form>
 </div>
+
 <div>
     <p id="PCRsystemWarning"></p>
 </div>
@@ -100,10 +102,7 @@
 
     $("#PCRsystemBtn").click(function () {
 
-        if ( $('input:radio[name="PCRMachineType"]:checked').val() == 'default') {
-            $("#PCRmachineWarning").text("The type of PCR machine is required.").addClass('colorRed');
-        }
-        else if ($('input:radio[name="PCRMachineType"]:checked').val() == 'typeA') {
+        if ($('input:radio[name="PCRMachineType"]:checked').val() == 'typeA') {
             $("#PCRmachineWarning").text("Great!").addClass('colorGreen');
             $(".stdValue").get(4).innerHTML = 0;
             $(".stdValue").get(5).innerHTML = 20 - 10 - 2 - 2 - 2 - $(".stdValue").get(4).innerHTML;
@@ -117,6 +116,9 @@
             $("#PCRmachineWarning").text("Great!").addClass('colorGreen');
             $(".stdValue").get(4).innerHTML = 0.1;
             $(".stdValue").get(5).innerHTML = 20 - 10 - 2 - 2 - 2 - $(".stdValue").get(4).innerHTML;
+        }
+        else {
+            $("#PCRmachineWarning").text("The type of PCR machine is required.").addClass('colorRed');
         }
 
         if ( ! ($("#reactionNumber").val() > 0) ) {
@@ -136,9 +138,10 @@
         var stdddH2OVol = Number($(".stdValue").get(5).innerHTML);
         var stdTotalVol = Number($(".stdValue").get(6).innerHTML);
 
-        var reactionNumber = $("#reactionNumber").val();
+        var reactionNumber = Number($("#reactionNumber").val());
+//        console.log(machineType, typeof reactionNumber);
 
-        $.post("realtimePCRsystemCalculator.php",
+        $.post("realtimePCRsystemCalculator2.php",
             {
                 machineType : machineType,
                 stdqPCRMixVol : stdqPCRMixVol,
@@ -159,6 +162,7 @@
                 $(".resultValue").get(4).innerHTML = JSON.parse(result)[4];
                 $(".resultValue").get(5).innerHTML = JSON.parse(result)[5];
                 $(".resultValue").get(6).innerHTML = JSON.parse(result)[6];
+//                $("#PCRsystemWarning").append(result);
             });
 
     });

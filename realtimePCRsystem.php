@@ -124,7 +124,9 @@
             var stdddH2OVol = Number($(".stdValue").get(5).innerHTML);
             var stdTotalVol = Number($(".stdValue").get(6).innerHTML);
 
-            var reactionNumber = $("#reactionNumber").val();
+//            var reactionNumber = $("#reactionNumber").val(); //string
+            var reactionNumber = Number($("#reactionNumber").val());
+//            console.log(typeof reactionNumber);
 
             $.post("realtimePCRsystemCalculator.php",
                 {

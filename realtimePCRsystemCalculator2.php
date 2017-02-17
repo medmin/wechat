@@ -1,12 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: medmin
- * Date: 2017/2/15
- * Time: 14:12
- */
 
-$machineType = isset($_POST['PCRMachineType']) ? $_POST['PCRMachineType'] : false;
+$machineType = isset($_POST['machineType']) ? $_POST['machineType'] : false;
 
 $stdqPCRMixVol = isset($_POST['stdqPCRMixVol']) ? $_POST['stdqPCRMixVol'] : false;
 $stdPrimer1Vol = isset($_POST['stdPrimer1Vol']) ? $_POST['stdPrimer1Vol'] : false;
@@ -26,11 +20,11 @@ $ROXVol = $stdROXVol * $reactionNumber ;
 $ddH2O = $stdddH2OVol * $reactionNumber ;
 $totalVol = $stdTotalVol * $reactionNumber ;
 
-if ( $machineType == 'default' || $machineType == false) {
-    $result = [0, 0, 0, 0, 0, 0, 0];
+if ( $machineType == 'typeA' || $machineType == 'typeB' || $machineType == 'typeC') {
+    $result =[$qPCRMixVol, $Primer1Vol, $Primer2Vol, $cDNAVol, $ROXVol, $ddH2O, $totalVol, $machineType] ;
 }
 else {
-    $result =[$qPCRMixVol, $Primer1Vol, $Primer2Vol, $cDNAVol, $ROXVol, $ddH2O, $totalVol] ;
+    $result = [0, 0, 0, 0, 0, 0, 0, $machineType];
 }
 
 echo json_encode($result);
