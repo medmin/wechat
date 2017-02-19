@@ -94,11 +94,15 @@
 </div>
 
 <button type="button" id="PCRsystemBtn">计算</button>
-<!--    <button type="button" id="PCRsystemReloadBtn">刷新</button>-->
+<button type="button" id="PCRsystemReloadBtn">刷新</button>
 
 <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
 
 <script>
+    $("#PCRsystemReloadBtn").click(function () {
+        // Reload the current page, without using the cache
+        window.location.reload(true);
+    });
 
     $("#PCRsystemBtn").click(function () {
 

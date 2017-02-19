@@ -9,7 +9,7 @@
 </head>
 <body>
     <h2>液体稀释计算器</h2>
-    <form action="">
+    <form action="molarityVolCalculator.php" method="post" id="molarityVolForm">
         <p>母液摩尔浓度：
             <input type="text">
             <br>
@@ -39,12 +39,16 @@
             <input type="radio">μl
         </p>
     </form>
-    <button>计算</button>
+    <button type="button" id="CalBtn">计算</button>
+    <button type="button" id="ReloadBtn">刷新</button>
 
 
 <!--jQuery-->
 <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
 <script>
+    $('#ReloadBtn').click(function () {
+        window.location.reload(true);
+    });
 
 </script>
 </body>
