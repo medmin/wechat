@@ -40,7 +40,7 @@
                     ABI PRISM 7000/7300/7700/7900H and 7900HTFast, ABI Step One, ABI Step One Plus
                 </div>
                 <div class="weui_cell_ft">
-                    <input type="radio" name="radio1" class="weui_check" id="typeBradio" value="typeB">
+                    <input type="radio" name="PCRMachineType" class="weui_check" id="typeBradio" value="typeB">
                     <span class="weui_icon_checked"></span>
                 </div>
             </label>
@@ -49,7 +49,7 @@
                     ABI 7500，7500 Fast, ABI Viia7, Stratagene Mx3000P, Mx3005P, Mx4000
                 </div>
                 <div class="weui_cell_ft">
-                    <input type="radio" name="radio1" class="weui_check" id="typeBradio" value="typeC">
+                    <input type="radio" name="PCRMachineType" class="weui_check" id="typeBradio" value="typeC">
                     <span class="weui_icon_checked"></span>
                 </div>
             </label>
