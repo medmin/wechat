@@ -50,31 +50,11 @@
                 </div>
             </label>
         </div>
-    </form>
 
 
-<!--        <div>-->
-<!--            <label>-->
-<!--                <input type="radio"  value="typeA" name="PCRMachineType">-->
-<!--                <span>BioRad iCycler, MyiQ, iQ5, CFX-96,CFX-384, <br>Eppendorf Mastercycler realplex, Roche LightCycler 480,LightCycler 2.0</span>-->
-<!--            </label>-->
-<!--            <br>-->
-<!--            <label>-->
-<!--                <input type="radio"  value="typeB" name="PCRMachineType">-->
-<!--                <span>ABI PRISM 7000/7300/7700/7900H and 7900HTFast, <br>ABI Step One, ABI Step One Plus</span>-->
-<!--            </label>-->
-<!--            <br>-->
-<!--            <label>-->
-<!--                <input type="radio"  value="typeC" name="PCRMachineType">-->
-<!--                <span>ABI 7500，7500 Fast, ABI Viia7, <br>Stratagene Mx3000P, Mx3005P, Mx4000</span>-->
-<!--            </label>-->
-<!--            <br>-->
-<!--            <br>-->
-<!--        </div>-->
+    <p id="PCRmachineWarning"></p>
 
-        <p id="PCRmachineWarning"></p>
-
-        <h2>Fill the following form: </h2>
+    <h2>Fill the following form: </h2>
         <table border="1">
             <tr>
                 <th>PCR Components</th>
@@ -124,8 +104,8 @@
     <p id="PCRsystemWarning"></p>
 </div>
 
-<button type="button" id="PCRsystemBtn">计算</button>
-<button type="button" id="PCRsystemReloadBtn">刷新</button>
+<button type="button" id="PCRsystemBtn" class="weui-btn weui-btn_primary">计算</button>
+<button type="button" id="PCRsystemReloadBtn" class="weui-btn weui-btn_default">刷新</button>
 
 <!--Bootstrap JS-->
 <!--    <script type="text/javascript" src="css/bootstrap-3.3.0/js/bootstrap.js"></script>-->
