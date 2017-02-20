@@ -19,7 +19,7 @@
     <h2 class="weui-btn weui-btn_primary">qPCR体系配置计算器</h2>
     <form id="RealTimePCRForm" method="post" action="realtimePCRsystemCalculator2.php">
         <div class="weui-cell weui-cells__title colorRed">
-            Choose the type of your PCR machine:
+            Step I: Choose the type of your PCR machine:
         </div>
         <div class="weui-cells weui-cells_radio">
             <label class="weui-cell weui-check__label" for="typeAradio">
@@ -55,7 +55,7 @@
     <p id="PCRmachineWarning"></p>
 
         <div class="weui-cell weui-cells__title colorRed">
-            Fill the following form:
+            Step II: Fill the following form:
         </div>
         <table border="1">
             <tr>
