@@ -14,7 +14,7 @@
 		<form id="soluteWeightForm" action="molaritySoluteWeightCalculator.php" method="post">
             <div class="weui-cell">
                 <div class="weui-cell__hd">
-                    <label class="weui-label">摩尔质量</label>
+                    <label class="weui-label">摩尔质量<br>（分子量）</label>
                 </div>
                 <div class="weui-cell__bd">
                     <input type="text" id="soluteMW" class="weui-input " placeholder="请输入溶质的分子量">
