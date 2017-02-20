@@ -10,20 +10,69 @@
 
 	</head>
 	<body>
-        <h2>配置:摩尔浓度</h2>
+        <h2 class="weui-btn weui-btn_primary">配置:摩尔浓度</h2>
 		<form id="soluteWeightForm" action="molaritySoluteWeightCalculator.php" method="post">
-			<input type="text" id="soluteMW"  placeholder="请输入溶质的分子量">
-			<br>
-            <input type="text" id="purity" placeholder="请输入溶质的纯度"> %
-            <br>
-			<input type="text" id="solutionVol" placeholder="请输入您要配制的体积"> ml
-			<br>
-			<input type="text" id="solutionMolarity" placeholder="请输入最终摩尔浓度"> mol/L (M)
+            <div class="weui-cell">
+                <div class="weui-cell__hd">
+                    <label class="weui-label">摩尔质量</label>
+                </div>
+                <div class="weui-cell__bd">
+                    <input type="text" id="soluteMW" class="weui-input " placeholder="请输入溶质的分子量">
+                </div>
+                <div class="weui-cell__ft">
+                    <label class="weui-label"> g/mol</label>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd">
+                    <label class="weui-label">试剂纯度</label>
+                </div>
+                <div class="weui-cell__bd">
+                    <input type="text" id="purity" class="weui-input" placeholder="请输入溶质的纯度">
+                </div>
+                <div class="weui-cell__ft">
+                    <label class="weui-label"> %</label>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd">
+                    <label class="weui-label">溶液体积</label>
+                </div>
+                <div class="weui-cell__bd">
+                    <input type="text" id="solutionVol" class="weui-input" placeholder="请输入您要配制的体积">
+                </div>
+                <div class="weui-cell__ft">
+                    <label class="weui-label"> ml</label>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd">
+                    <label class="weui-label">溶液浓度</label>
+                </div>
+                <div class="weui-cell__bd">
+                    <input type="text" id="solutionMolarity" class="weui-input" placeholder="请输入最终摩尔浓度">
+                </div>
+                <div class="weui-cell__ft">
+                    <label class="weui-label"> mol/L (M)</label>
+                </div>
+            </div>
 		</form>
-        <br>
+
+		<div class="weui-cell">
+            <p></p>
+            <div class="weui-cell__hd">
+                <label class="weui-label">计算结果</label>
+            </div>
+            <div class="weui-cell__bd">
+                <p id="result1"></p>
+            </div>
+            <div class="weui-cell__ft">
+                <label class="weui-label"> g</label>
+            </div>
+        </div>
+
         <button type="button" id="soluteWeightCalculatorBtn" class="weui-btn weui-btn_primary">计算</button>
         <button type="button" id="reloadBtn" class="weui-btn weui-btn_default">刷新</button>
-		<div id="result1"><p></p></div>
 
 
         <!--VueJS-->
@@ -56,11 +105,11 @@
                             solutionMolarity:solutionMolarity
                         },
                         function(res){
-                        $("#result1 p").text("您计算的结果为：" + res);
+                        $("#result1").text(res);
                     });
                 }
                 else {
-                    $("#result1 p").text("请输入适当的数字。");
+                    $("#result1").text("请输入适当的数字");
                 }
 
 

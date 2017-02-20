@@ -2,13 +2,12 @@
 
 class Calculator {
 	
-	const GRAM = "g";
 	const stdSolutionVol = 1000;
 	const percentage =  0.01 ;
 	
 	public function getSoluteWeight($soluteMW, $purity, $solutionVol, $solutionMolarity) {
 		$soluteWeight = ($solutionVol / self::stdSolutionVol) *$solutionMolarity * $soluteMW / ($purity * self::percentage);
-		return number_format($soluteWeight, 2).self::GRAM;
+		return number_format($soluteWeight, 2);
 		// number_format's return value is string.
 	}
 	
