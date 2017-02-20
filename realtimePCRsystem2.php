@@ -33,7 +33,7 @@
             </label>
             <label class="weui-cell weui-check__label" for="typeBradio">
                 <div class="weui_cell_bd weui_cell_primary">
-                    ABI PRISM 7000/7300/7700/7900H and 7900HTFast, ABI Step One, ABI Step One Plus
+                    ABI PRISM 7000 / 7300 / 7700 / 7900H and 7900HTFast, ABI Step One, ABI Step One Plus
                 </div>
                 <div class="weui-cell__ft">
                     <input type="radio" name="PCRMachineType" class="weui-check" id="typeBradio" value="typeB">
