@@ -21,10 +21,10 @@
 </head>
 <body>
 <div>
+    <div class="weui-cell weui-cells__title">
+        Choose the type of your PCR machine:
+    </div>
     <form id="RealTimePCRForm" method="post" action="realtimePCRsystemCalculator2.php">
-        <div class="weui_cells_title">
-            Choose the type of your PCR machine:
-        </div>
         <div class="weui_cells weui_cells_form weui_cells_radio">
             <label class="weui_cell weui_check_label" for="typeAradio">
                 <div class="weui_cell_bd weui_cell_primary">
@@ -54,6 +54,7 @@
                 </div>
             </label>
         </div>
+    </form>
 
 
 <!--        <div>-->
