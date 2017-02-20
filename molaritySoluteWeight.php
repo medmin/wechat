@@ -10,7 +10,7 @@
 
 	</head>
 	<body>
-        <h2 class="weui-btn weui-btn_primary">配置:摩尔浓度</h2>
+        <h2 class="weui-btn weui-btn_primary">标准溶液配置I:摩尔浓度</h2>
 		<form id="soluteWeightForm" action="molaritySoluteWeightCalculator.php" method="post">
             <div class="weui-cell">
                 <div class="weui-cell__hd">
