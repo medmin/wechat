@@ -54,7 +54,9 @@
 
     <p id="PCRmachineWarning"></p>
 
-    <h2>Fill the following form: </h2>
+        <div class="weui-cell weui-cells__title colorRed">
+            Fill the following form:
+        </div>
         <table border="1">
             <tr>
                 <th>PCR Components</th>
