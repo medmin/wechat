@@ -21,8 +21,8 @@
 			<input type="text" id="solutionMolarity" placeholder="请输入最终摩尔浓度"> mol/L (M)
 		</form>
         <br>
-        <button type="button" id="soluteWeightCalculatorBtn" class="weui-btn weui-btn_primary">计算</button>
-        <button type="button" id="reloadBtn" class="weui-btn weui-btn_primary">刷新</button>
+        <button type="button" id="soluteWeightCalculatorBtn" class="weui-btn weui-btn_mini weui-btn_primary">计算</button>
+        <button type="button" id="reloadBtn" class="weui-btn weui-btn_mini weui-btn_primary">刷新</button>
 		<div id="result1"><p></p></div>
 
 
