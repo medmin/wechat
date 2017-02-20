@@ -1,15 +1,18 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>液体稀释计算器</title>
+    <title>稀释计算器I：摩尔浓度</title>
     <!--Bootstrap CSS-->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.0/css/bootstrap-theme.css"/>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.0/css/bootstrap.css"/>
-    <!--    <script type="text/javascript" src="css/bootstrap-3.3.0/js/bootstrap.js"></script>-->
+    <!--<link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.0/css/bootstrap-theme.css"/>-->
+    <!--<link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.0/css/bootstrap.css"/>-->
+
+    <!--LayUI-->
+    <link rel="stylesheet" type="text/css" href="js/layui-v1.0.7/css/layui.css" />
+
 </head>
 <body>
-    <h2>液体稀释计算器</h2>
-    <form action="molarityVolCalculator.php" method="post" id="molarityVolForm">
+    <h2>稀释计算器I：摩尔浓度</h2>
+    <form action="molarityDilutionCalculator.php" method="post" id="molarityVolForm">
         <p>母液摩尔浓度：
             <input type="text">
             <br>
@@ -42,14 +45,18 @@
     <button type="button" id="CalBtn">计算</button>
     <button type="button" id="ReloadBtn">刷新</button>
 
+    <!--jQuery-->
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <!--LayUI JS-->
+    <script type="text/javascript" src="js/layui-v1.0.7/layui.js"></script>
+    <!--Bootstrap JS-->
+    <!--<script type="text/javascript" src="css/bootstrap-3.3.0/js/bootstrap.js"></script>-->
 
-<!--jQuery-->
-<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
-<script>
-    $('#ReloadBtn').click(function () {
-        window.location.reload(true);
-    });
+    <script>
+        $('#ReloadBtn').click(function () {
+            window.location.reload(true);
+        });
 
-</script>
+    </script>
 </body>
 </html>
