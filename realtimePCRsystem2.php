@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>RealTime-PCR System</title>
+    <title>乐睿实验助手</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="stylesheet" href="css/weui.min.css" />
     <!--Bootstrap CSS-->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.0/css/bootstrap-theme.css"/>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.0/css/bootstrap.css"/>
-    <!--    <script type="text/javascript" src="css/bootstrap-3.3.0/js/bootstrap.js"></script>-->
+<!--    <link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.0/css/bootstrap-theme.css"/>-->
+<!--    <link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.0/css/bootstrap.css"/>-->
+
     <style>
         .colorRed {
             color : red;
@@ -20,26 +22,58 @@
 <body>
 <div>
     <form id="RealTimePCRForm" method="post" action="realtimePCRsystemCalculator2.php">
-
-        <h2>Choose the type of your PCR machine: </h2>
-        <div>
-            <label>
-                <input type="radio"  value="typeA" name="PCRMachineType">
-                <span>BioRad iCycler, MyiQ, iQ5, CFX-96,CFX-384, <br>Eppendorf Mastercycler realplex, Roche LightCycler 480,LightCycler 2.0</span>
-            </label>
-            <br>
-            <label>
-                <input type="radio"  value="typeB" name="PCRMachineType">
-                <span>ABI PRISM 7000/7300/7700/7900H and 7900HTFast, <br>ABI Step One, ABI Step One Plus</span>
-            </label>
-            <br>
-            <label>
-                <input type="radio"  value="typeC" name="PCRMachineType">
-                <span>ABI 7500，7500 Fast, ABI Viia7, <br>Stratagene Mx3000P, Mx3005P, Mx4000</span>
-            </label>
-            <br>
-            <br>
+        <div class="weui_cells_title">
+            Choose the type of your PCR machine:
         </div>
+        <div class="weui_cells weui_cells_form weui_cells_radio">
+            <label class="weui_cell weui_check_label" for="typeAradio">
+                <div class="weui_cell_bd weui_cell_primary">
+                    BioRad iCycler, MyiQ, iQ5, CFX-96,CFX-384, Eppendorf Mastercycler realplex, Roche LightCycler 480,LightCycler 2.0
+                </div>
+                <div class="weui_cell_ft">
+                    <input type="radio"  name="PCRMachineType" class="weui_check" id="typeAradio" value="typeA">
+                    <span class="weui_icon_checked"></span>
+                </div>
+            </label>
+            <label class="weui_cell weui_check_label" for="typeBradio">
+                <div class="weui_cell_bd weui_cell_primary">
+                    ABI PRISM 7000/7300/7700/7900H and 7900HTFast, ABI Step One, ABI Step One Plus
+                </div>
+                <div class="weui_cell_ft">
+                    <input type="radio" name="radio1" class="weui_check" id="typeBradio" value="typeB">
+                    <span class="weui_icon_checked"></span>
+                </div>
+            </label>
+            <label class="weui_cell weui_check_label" for="typeCradio">
+                <div class="weui_cell_bd weui_cell_primary">
+                    ABI 7500，7500 Fast, ABI Viia7, Stratagene Mx3000P, Mx3005P, Mx4000
+                </div>
+                <div class="weui_cell_ft">
+                    <input type="radio" name="radio1" class="weui_check" id="typeBradio" value="typeC">
+                    <span class="weui_icon_checked"></span>
+                </div>
+            </label>
+        </div>
+
+
+<!--        <div>-->
+<!--            <label>-->
+<!--                <input type="radio"  value="typeA" name="PCRMachineType">-->
+<!--                <span>BioRad iCycler, MyiQ, iQ5, CFX-96,CFX-384, <br>Eppendorf Mastercycler realplex, Roche LightCycler 480,LightCycler 2.0</span>-->
+<!--            </label>-->
+<!--            <br>-->
+<!--            <label>-->
+<!--                <input type="radio"  value="typeB" name="PCRMachineType">-->
+<!--                <span>ABI PRISM 7000/7300/7700/7900H and 7900HTFast, <br>ABI Step One, ABI Step One Plus</span>-->
+<!--            </label>-->
+<!--            <br>-->
+<!--            <label>-->
+<!--                <input type="radio"  value="typeC" name="PCRMachineType">-->
+<!--                <span>ABI 7500，7500 Fast, ABI Viia7, <br>Stratagene Mx3000P, Mx3005P, Mx4000</span>-->
+<!--            </label>-->
+<!--            <br>-->
+<!--            <br>-->
+<!--        </div>-->
 
         <p id="PCRmachineWarning"></p>
 
@@ -96,6 +130,10 @@
 <button type="button" id="PCRsystemBtn">计算</button>
 <button type="button" id="PCRsystemReloadBtn">刷新</button>
 
+<!--Bootstrap JS-->
+<!--    <script type="text/javascript" src="css/bootstrap-3.3.0/js/bootstrap.js"></script>-->
+
+<!--JQuery-->
 <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
 
 <script>
