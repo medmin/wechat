@@ -5,10 +5,6 @@
     <title>乐睿实验助手</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
     <link rel="stylesheet" href="css/weui.min.css" />
-    <!--Bootstrap CSS-->
-<!--    <link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.0/css/bootstrap-theme.css"/>-->
-<!--    <link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.0/css/bootstrap.css"/>-->
-
     <style>
         .colorRed {
             color : red;
@@ -17,7 +13,6 @@
             color : green;
         }
     </style>
-
 </head>
 <body>
 <div>
@@ -30,27 +25,27 @@
                 <div class="weui_cell_bd weui_cell_primary">
                     BioRad iCycler, MyiQ, iQ5, CFX-96,CFX-384, Eppendorf Mastercycler realplex, Roche LightCycler 480,LightCycler 2.0
                 </div>
-                <div class="weui_cell_ft">
-                    <input type="radio"  name="PCRMachineType" class="weui_check" id="typeAradio" value="typeA">
-                    <span class="weui_icon_checked"></span>
+                <div class="weui-cell__ft">
+                    <input type="radio"  name="PCRMachineType" class="weui-check__label" id="typeAradio" value="typeA">
+                    <span class="weui-icon-checked"></span>
                 </div>
             </label>
             <label class="weui_cell weui_check_label" for="typeBradio">
                 <div class="weui_cell_bd weui_cell_primary">
                     ABI PRISM 7000/7300/7700/7900H and 7900HTFast, ABI Step One, ABI Step One Plus
                 </div>
-                <div class="weui_cell_ft">
-                    <input type="radio" name="PCRMachineType" class="weui_check" id="typeBradio" value="typeB">
-                    <span class="weui_icon_checked"></span>
+                <div class="weui-cell__ft">
+                    <input type="radio" name="PCRMachineType" class="weui-check" id="typeBradio" value="typeB">
+                    <span class="weui-icon-checked"></span>
                 </div>
             </label>
             <label class="weui_cell weui_check_label" for="typeCradio">
                 <div class="weui_cell_bd weui_cell_primary">
                     ABI 7500，7500 Fast, ABI Viia7, Stratagene Mx3000P, Mx3005P, Mx4000
                 </div>
-                <div class="weui_cell_ft">
-                    <input type="radio" name="PCRMachineType" class="weui_check" id="typeCradio" value="typeC">
-                    <span class="weui_icon_checked"></span>
+                <div class="weui-cell__ft">
+                    <input type="radio" name="PCRMachineType" class="weui-check" id="typeCradio" value="typeC">
+                    <span class="weui-icon-checked"></span>
                 </div>
             </label>
         </div>
@@ -83,7 +78,7 @@
             <tr>
                 <th>PCR Components</th>
                 <th>1 Reaction (μL)</th>
-                <th><input type="number" id="reactionNumber" placeholder="How many reactions?"></th>
+                <th><input type="number" id="reactionNumber" placeholder="How many reactions?" class="weui-input"></th>
             </tr>
             <tr>
                 <td>2X qPCR Mix</td>
