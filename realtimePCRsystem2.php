@@ -49,7 +49,7 @@
                     ABI 7500，7500 Fast, ABI Viia7, Stratagene Mx3000P, Mx3005P, Mx4000
                 </div>
                 <div class="weui_cell_ft">
-                    <input type="radio" name="PCRMachineType" class="weui_check" id="typeBradio" value="typeC">
+                    <input type="radio" name="PCRMachineType" class="weui_check" id="typeCradio" value="typeC">
                     <span class="weui_icon_checked"></span>
                 </div>
             </label>
