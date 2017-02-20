@@ -16,7 +16,7 @@
 </head>
 <body>
 <div>
-
+    <h2 class="weui-btn weui-btn_primary">qPCR体系配置计算器</h2>
     <form id="RealTimePCRForm" method="post" action="realtimePCRsystemCalculator2.php">
         <div class="weui-cell weui-cells__title">
             Choose the type of your PCR machine:
