@@ -17,7 +17,7 @@
                     <label class="weui-label">摩尔质量<br>(分子量)</label>
                 </div>
                 <div class="weui-cell__bd">
-                    <input type="text" id="soluteMW" class="weui-input " placeholder="请输入溶质的分子量">
+                    <input type="text" id="soluteMW" class="weui-input " placeholder="溶质分子量">
                 </div>
                 <div class="weui-cell__ft">
                     <label class="weui-label"> g/mol</label>
@@ -28,7 +28,7 @@
                     <label class="weui-label">试剂纯度</label>
                 </div>
                 <div class="weui-cell__bd">
-                    <input type="text" id="purity" class="weui-input" placeholder="请输入溶质的纯度">
+                    <input type="text" id="purity" class="weui-input" placeholder="试剂纯度">
                 </div>
                 <div class="weui-cell__ft">
                     <label class="weui-label"> %</label>
@@ -39,7 +39,7 @@
                     <label class="weui-label">溶液体积</label>
                 </div>
                 <div class="weui-cell__bd">
-                    <input type="text" id="solutionVol" class="weui-input" placeholder="请输入您要配制的体积">
+                    <input type="text" id="solutionVol" class="weui-input" placeholder="溶液终体积">
                 </div>
                 <div class="weui-cell__ft">
                     <label class="weui-label"> ml</label>
@@ -50,7 +50,7 @@
                     <label class="weui-label">溶液浓度</label>
                 </div>
                 <div class="weui-cell__bd">
-                    <input type="text" id="solutionMolarity" class="weui-input" placeholder="请输入最终摩尔浓度">
+                    <input type="text" id="solutionMolarity" class="weui-input" placeholder="溶液终浓度">
                 </div>
                 <div class="weui-cell__ft">
                     <label class="weui-label"> mol/L (M)</label>
