@@ -21,31 +21,31 @@
         <div class="weui-cell weui-cells__title">
             Choose the type of your PCR machine:
         </div>
-        <div class="weui_cells weui_cells_form weui_cells_radio">
-            <label class="weui_cell weui_check_label" for="typeAradio">
-                <div class="weui_cell_bd weui_cell_primary">
-                    BioRad iCycler, MyiQ, iQ5, CFX-96,CFX-384, Eppendorf Mastercycler realplex, Roche LightCycler 480,LightCycler 2.0
+        <div class="weui-cells weui-cells_radio">
+            <label class="weui-cell weui-check__label" for="typeAradio">
+                <div class="weui-cell_bd weui-cell_primary">
+                    <p>BioRad iCycler, MyiQ, iQ5, CFX-96,CFX-384, Eppendorf Mastercycler realplex, Roche LightCycler 480,LightCycler 2.0</p>
                 </div>
                 <div class="weui-cell__ft">
-                    <input type="radio"  name="PCRMachineType" class="" id="typeAradio" value="typeA">
+                    <input type="radio"  name="PCRMachineType" class="weui-check" id="typeAradio" value="typeA">
                     <span class="weui-icon-checked"></span>
                 </div>
             </label>
-            <label class="weui_cell weui_check_label" for="typeBradio">
+            <label class="weui-cell weui-check__label" for="typeBradio">
                 <div class="weui_cell_bd weui_cell_primary">
                     ABI PRISM 7000/7300/7700/7900H and 7900HTFast, ABI Step One, ABI Step One Plus
                 </div>
                 <div class="weui-cell__ft">
-                    <input type="radio" name="PCRMachineType" class="" id="typeBradio" value="typeB">
+                    <input type="radio" name="PCRMachineType" class="weui-check" id="typeBradio" value="typeB">
                     <span class="weui-icon-checked"></span>
                 </div>
             </label>
-            <label class="weui_cell weui_check_label" for="typeCradio">
+            <label class="weui-cell weui-check__label" for="typeCradio">
                 <div class="weui_cell_bd weui_cell_primary">
                     ABI 7500，7500 Fast, ABI Viia7, Stratagene Mx3000P, Mx3005P, Mx4000
                 </div>
                 <div class="weui-cell__ft">
-                    <input type="radio" name="PCRMachineType" class="" id="typeCradio" value="typeC">
+                    <input type="radio" name="PCRMachineType" class="weui-check" id="typeCradio" value="typeC">
                     <span class="weui-icon-checked"></span>
                 </div>
             </label>
