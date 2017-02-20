@@ -33,7 +33,7 @@
             </label>
             <label class="weui-cell weui-check__label" for="typeBradio">
                 <div class="weui_cell_bd weui_cell_primary">
-                    ABI PRISM 7000 / 7300 / 7700 / 7900H and 7900HTFast, ABI Step One, ABI Step One Plus
+                    <p>ABI PRISM 7000, 7300, 7700, 7900H and 7900HTFast, ABI Step One, ABI Step One Plus</p>
                 </div>
                 <div class="weui-cell__ft">
                     <input type="radio" name="PCRMachineType" class="weui-check" id="typeBradio" value="typeB">
@@ -42,7 +42,7 @@
             </label>
             <label class="weui-cell weui-check__label" for="typeCradio">
                 <div class="weui_cell_bd weui_cell_primary">
-                    ABI 7500，7500 Fast, ABI Viia7, Stratagene Mx3000P, Mx3005P, Mx4000
+                    <p>ABI 7500，7500 Fast, ABI Viia7, Stratagene Mx3000P, Mx3005P, Mx4000</p>
                 </div>
                 <div class="weui-cell__ft">
                     <input type="radio" name="PCRMachineType" class="weui-check" id="typeCradio" value="typeC">
@@ -106,9 +106,6 @@
 
 <button type="button" id="PCRsystemBtn" class="weui-btn weui-btn_primary">计算</button>
 <button type="button" id="PCRsystemReloadBtn" class="weui-btn weui-btn_default">刷新</button>
-
-<!--Bootstrap JS-->
-<!--    <script type="text/javascript" src="css/bootstrap-3.3.0/js/bootstrap.js"></script>-->
 
 <!--JQuery-->
 <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
