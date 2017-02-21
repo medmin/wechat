@@ -108,11 +108,31 @@
         });
 
         $("#molarityDilutionCalBtn").click(function () {
-            var
+            var motherSolutionMolarityC = $("#motherSolutionMolarityC").val();
+            var workingSolutionMolarityC = $("#workingSolutionMolarityC").val();
+            var workingSolutionMolarityV = $("#workingSolutionMolarityV").val();
+
+            if ( $.isNumeric(motherSolutionMolarityC) && $.isNumeric(workingSolutionMolarityC) && $.isNumeric(workingSolutionMolarityV) ) {
+                if (motherSolutionMolarityC > workingSolutionMolarityC){
+                    $.post("molarityDilutionCalculator.php",
+                        {
+                            motherSolutionMolarityC : motherSolutionMolarityC,
+                            workingSolutionMolarityC : workingSolutionMolarityC,
+                            workingSolutionMolarityV : workingSolutionMolarityV
+                        },
+                        function (result) {
+                            $("#motherSolutionMolarityV").text(result).addClass("colorGreen");
+                        });
+                }
+                else {
+                    $("#motherSolutionMolarityV").text("请注意逻辑错误！").addClass("colorRed");
+                }
+            }
+            else {
+                $("#motherSolutionMolarityV").text("请输入数字！").addClass("colorRed");
+            }
 
         });
-
-
 
     </script>
 </body>
