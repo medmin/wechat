@@ -1,29 +1,38 @@
 <html>
     <head>
-        <meta>
-        <title></title>
+        <meta charset="utf-8">
+        <title>乐睿实验助手</title>
         <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
         <link rel="stylesheet" href="css/weui.min.css" />
+        <style>
+            .colorRed {
+                color : red;
+            }
+            .colorGreen {
+                color : green;
+            }
+        </style>
     </head>
     <body>
-        <form action="" method=""  id="">
+        <h2 class="weui-btn weui-btn_primary">稀释计算器II：体积或质量浓度</h2>
+        <form action="volDilutionCalculator.php" method="post"  id="volDilutionForm">
             <div class="weui-cell">
                 <div class="weui-cell__hd">
                     <label class="weui-label">母液浓度</label>
                 </div>
                 <div class="weui-cell__bd">
-                    <input type="text" id="soluteMW" class="weui-input " placeholder="溶质分子量">
+                    <input type="text" id="motherSolutionC" class="weui-input " placeholder="母液浓度">
                 </div>
                 <div class="weui-cell__ft">
-                    <label class="weui-label">%(v/v)</label>
+                    <label class="weui-label">%</label>
                 </div>
             </div>
             <div class="weui-cell">
                 <div class="weui-cell__hd">
                     <label class="weui-label">母液体积</label>
                 </div>
-                <div class="weui-cell__bd">
-                    <p>求母液体积</p>
+                <div class="weui-cell__bd" >
+                    <p id="motherSolutionV">求母液体积</p>
                 </div>
                 <div class="weui-cell__ft">
                     <label class="weui-label">ml</label>
@@ -34,10 +43,10 @@
                     <label class="weui-label">工作液浓度</label>
                 </div>
                 <div class="weui-cell__bd">
-                    <input type="text" id="solutionVol" class="weui-input" placeholder="终浓度">
+                    <input type="text" id="workingSolutionC" class="weui-input" placeholder="终浓度">
                 </div>
                 <div class="weui-cell__ft">
-                    <label class="weui-label">%(v/v)</label>
+                    <label class="weui-label">%</label>
                 </div>
             </div>
             <div class="weui-cell">
@@ -45,7 +54,7 @@
                     <label class="weui-label">工作液体积</label>
                 </div>
                 <div class="weui-cell__bd">
-                    <input type="text" id="solutionMolarity" class="weui-input" placeholder="终体积">
+                    <input type="text" id="workingSolutionV" class="weui-input" placeholder="终体积">
                 </div>
                 <div class="weui-cell__ft">
                     <label class="weui-label">ml</label>
@@ -61,6 +70,26 @@
         <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
 
         <script>
+
+            $('#reloadBtn').click(function () {
+                window.location.reload(true);
+            });
+
+            $("#volDilutionBtn").click(function () {
+                var motherSolutionC = $("#motherSolutionC").val();
+                var workingSolutionC = $("#workingSolutionC").val();
+                var workingSolutionV = $("#workingSolutionV").val();
+
+                $.post("volDilutionCalculator.php",
+                    {
+                        motherSolutionC : motherSolutionC,
+                        workingSolutionC : workingSolutionC,
+                        workingSolutionV : workingSolutionV
+                    },
+                    function (result) {
+                        $("#motherSolutionV").text(result).addClass("colorGreen");
+                });
+            });
 
         </script>
     </body>
