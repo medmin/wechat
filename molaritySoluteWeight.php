@@ -4,10 +4,14 @@
 		<title>乐睿实验助手</title>
         <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
         <link rel="stylesheet" href="css/weui.min.css" />
-        <!--Bootstrap CSS-->
-        <!--<link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.0/css/bootstrap-theme.css"/>-->
-        <!--<link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.0/css/bootstrap.css"/>-->
-
+        <style>
+            .colorRed {
+                color : red;
+            }
+            .colorGreen {
+                color : green;
+            }
+        </style>
 	</head>
 	<body>
         <h2 class="weui-btn weui-btn_primary">溶液配置I:摩尔浓度</h2>
@@ -96,7 +100,7 @@
 				var solutionVol = $("#solutionVol").val();
 				var solutionMolarity = $("#solutionMolarity").val();
 
-				if (soluteMW != '' && purity != '' && solutionVol != '' && solutionMolarity != ''){
+				if ( $.isNumeric(soluteMW) && $.isNumeric(purity) && $.isNumeric(solutionVol) && $.isNumeric(solutionMolarity) ){
                     $.post("molaritySoluteWeightCalculator.php",
                         {
                             soluteMW:soluteMW,
@@ -109,7 +113,7 @@
                     });
                 }
                 else {
-                    $("#result1").text("请输入适当的数字");
+                    $("#result1").text("请输入适当的数字!").addClass('colorRed');
                 }
 
 
