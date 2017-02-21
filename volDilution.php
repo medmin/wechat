@@ -81,15 +81,21 @@
                 var workingSolutionV = $("#workingSolutionV").val();
 
                 if ( $.isNumeric(motherSolutionC) &&　$.isNumeric(workingSolutionC) && $.isNumeric(workingSolutionV)){
-                    $.post("volDilutionCalculator.php",
-                        {
-                            motherSolutionC : motherSolutionC,
-                            workingSolutionC : workingSolutionC,
-                            workingSolutionV : workingSolutionV
-                        },
-                        function (result) {
-                            $("#motherSolutionV").text(result).addClass("colorGreen");
-                        });
+                    if ( motherSolutionC > workingSolutionC ) {
+                        $.post("volDilutionCalculator.php",
+                            {
+                                motherSolutionC : motherSolutionC,
+                                workingSolutionC : workingSolutionC,
+                                workingSolutionV : workingSolutionV
+                            },
+                            function (result) {
+                                $("#motherSolutionV").text(result).addClass("colorGreen");
+                            });
+                    }
+                    else {
+                        $("#motherSolutionV").text("请注意逻辑错误！").addClass("colorRed");
+                    }
+
                 }
                 else {
                     $("#motherSolutionV").text("请输入数字！").addClass("colorRed");
