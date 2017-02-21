@@ -23,7 +23,7 @@
                     <label class="weui-label">母液体积</label>
                 </div>
                 <div class="weui-cell__bd">
-                    <input type="text" id="purity" class="weui-input" placeholder="求母液体积">
+                    <p>求母液体积</p>
                 </div>
                 <div class="weui-cell__ft">
                     <label class="weui-label">ml</label>
