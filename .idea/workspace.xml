@@ -18,38 +18,8 @@
       <file leaf-file-name="volDilution.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/volDilution.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="93" column="21" lean-forward="true" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="realtimePCRsystem2.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/realtimePCRsystem2.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="617">
-              <caret line="171" column="47" lean-forward="true" selection-start-line="171" selection-start-column="47" selection-end-line="171" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wechatServerIndex.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wechatServerIndex.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="molaritySoluteWeight.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/molaritySoluteWeight.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1342">
-              <caret line="36" column="43" lean-forward="true" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
+            <state relative-caret-position="264">
+              <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -58,21 +28,9 @@
       <file leaf-file-name="molarityDilution.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/molarityDilution.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="24" column="16" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+            <state relative-caret-position="242">
+              <caret line="16" column="65" lean-forward="false" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="volDilutionCalculator.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/volDilutionCalculator.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-              <folding>
-                <element signature="e#6#94#0#PHP" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -97,15 +55,15 @@
         <option value="$PROJECT_DIR$/realtimePCRsystemCalculator2.php" />
         <option value="$PROJECT_DIR$/molarityVol2.php" />
         <option value="$PROJECT_DIR$/molarityVol.php" />
-        <option value="$PROJECT_DIR$/molarityDilution.php" />
         <option value="$PROJECT_DIR$/molarityWeightCalculator.php" />
         <option value="$PROJECT_DIR$/molarityWeight.php" />
         <option value="$PROJECT_DIR$/soluteWeight.php" />
         <option value="$PROJECT_DIR$/molaritySoluteWeightCalculator.php" />
-        <option value="$PROJECT_DIR$/realtimePCRsystem2.php" />
         <option value="$PROJECT_DIR$/volDilutionCalculator.php" />
         <option value="$PROJECT_DIR$/molaritySoluteWeight.php" />
         <option value="$PROJECT_DIR$/volDilution.php" />
+        <option value="$PROJECT_DIR$/realtimePCRsystem2.php" />
+        <option value="$PROJECT_DIR$/molarityDilution.php" />
       </list>
     </option>
   </component>
@@ -245,11 +203,12 @@
       <workItem from="1487650511369" duration="2043000" />
       <workItem from="1487652796475" duration="560000" />
       <workItem from="1487653455112" duration="225000" />
+      <workItem from="1487660598923" duration="2140000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33018000" />
+    <option name="totallyTimeSpent" value="35158000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -287,6 +246,56 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/volDilution.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2046">
+          <caret line="93" column="21" lean-forward="false" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/realtimePCRsystem2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3762">
+          <caret line="171" column="47" lean-forward="true" selection-start-line="171" selection-start-column="47" selection-end-line="171" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechatServerIndex.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molaritySoluteWeight.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="36" column="43" lean-forward="true" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molarityDilution.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/volDilutionCalculator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <folding>
+            <element signature="e#6#94#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/volDilution.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -537,30 +546,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/molaritySoluteWeight.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1342">
-          <caret line="36" column="43" lean-forward="true" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/volDilution.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="93" column="21" lean-forward="true" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/realtimePCRsystem2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="617">
-          <caret line="171" column="47" lean-forward="true" selection-start-line="171" selection-start-column="47" selection-end-line="171" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wechatServerIndex.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -579,10 +564,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/realtimePCRsystem2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="51" column="14" lean-forward="true" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/molaritySoluteWeight.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="36" column="43" lean-forward="true" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/volDilution.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/molarityDilution.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" column="16" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+        <state relative-caret-position="242">
+          <caret line="16" column="65" lean-forward="false" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
           <folding />
         </state>
       </provider>
