@@ -8,22 +8,20 @@
 <body>
     <h2>稀释计算器I：摩尔浓度</h2>
     <form action="molarityDilutionCalculator.php" method="post" id="molarityVolForm">
-        <div>
-            <div class="weui-cell">
-                <div class="weui-cell__hd">
-                    <label class="weui-label">母液摩尔浓度</label>
-                </div>
-                <div class="weui-cell__bd">
-                    <input type="text" id="motherSolutionMolarityC" class="weui-input " placeholder="母液摩尔浓度">
-                </div>
-                <div class="weui-cell__ft">
-                    <select class="weui-select">
-                        <option value="">选择单位</option>
-                        <option value="">mol/L (M)</option>
-                        <option value="">mmol/L (mM)</option>
-                        <option value="">μmol/L (μM)</option>
-                    </select>
-                </div>
+        <div class="weui-cell">
+            <div class="weui-cell__hd">
+                <label class="weui-label">母液摩尔浓度</label>
+            </div>
+            <div class="weui-cell__bd">
+                <input type="text" id="motherSolutionMolarityC" class="weui-input " placeholder="母液摩尔浓度">
+            </div>
+            <div class="weui-cell__ft">
+                <select class="weui-select">
+                    <option value="">选择单位</option>
+                    <option value="">mol/L (M)</option>
+                    <option value="">mmol/L (mM)</option>
+                    <option value="">μmol/L (μM)</option>
+                </select>
             </div>
         </div>
         <p>母液体积：
