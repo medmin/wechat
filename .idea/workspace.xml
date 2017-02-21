@@ -18,8 +18,8 @@
       <file leaf-file-name="volDilution.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/volDilution.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="66" />
+            <state relative-caret-position="-176">
+              <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -28,8 +28,18 @@
       <file leaf-file-name="molarityDilution.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/molarityDilution.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="22" column="44" lean-forward="false" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+            <state relative-caret-position="594">
+              <caret line="114" column="0" lean-forward="true" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="molarityDilutionCalculator.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/molarityDilutionCalculator.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -61,8 +71,9 @@
         <option value="$PROJECT_DIR$/molaritySoluteWeightCalculator.php" />
         <option value="$PROJECT_DIR$/volDilutionCalculator.php" />
         <option value="$PROJECT_DIR$/molaritySoluteWeight.php" />
-        <option value="$PROJECT_DIR$/volDilution.php" />
         <option value="$PROJECT_DIR$/realtimePCRsystem2.php" />
+        <option value="$PROJECT_DIR$/volDilution.php" />
+        <option value="$PROJECT_DIR$/molarityDilutionCalculator.php" />
         <option value="$PROJECT_DIR$/molarityDilution.php" />
       </list>
     </option>
@@ -203,12 +214,12 @@
       <workItem from="1487650511369" duration="2043000" />
       <workItem from="1487652796475" duration="560000" />
       <workItem from="1487653455112" duration="225000" />
-      <workItem from="1487660598923" duration="2782000" />
+      <workItem from="1487660598923" duration="5500000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35800000" />
+    <option name="totallyTimeSpent" value="38518000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -505,14 +516,6 @@
     <entry file="file://$PROJECT_DIR$/test.php" />
     <entry file="file://$PROJECT_DIR$/testCalculator.php" />
     <entry file="file://$PROJECT_DIR$/test.php" />
-    <entry file="file://$PROJECT_DIR$/molarityDilutionCalculator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/molarityVol2.php" />
     <entry file="file://$PROJECT_DIR$/realtimePCRsystemCalculator.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -580,18 +583,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/molarityDilutionCalculator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/volDilution.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="66" />
+        <state relative-caret-position="-176">
+          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/molarityDilution.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="22" column="44" lean-forward="false" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+        <state relative-caret-position="594">
+          <caret line="114" column="0" lean-forward="true" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
           <folding />
         </state>
       </provider>

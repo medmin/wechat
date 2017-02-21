@@ -21,7 +21,7 @@
                     <label class="weui-label">母液浓度</label>
                 </div>
                 <div class="weui-cell__bd">
-                    <input type="text" id="motherSolutionC" class="weui-input " placeholder="母液浓度">
+                    <input type="text" id="motherSolutionC" class="weui-input" placeholder="母液浓度">
                 </div>
                 <div class="weui-cell__ft">
                     <label class="weui-label">%</label>
