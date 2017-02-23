@@ -69,12 +69,12 @@
         <!--jQuery-->
         <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
         <!--Custom JS-->
-<!--        <script type="text/javascript" src=""></script>-->
+        <script type="text/javascript" src="js/AndroidWechatReload.js"></script>
 
         <script>
 
             $('#reloadBtn').click(function () {
-                window.location.reload(true);
+                window.location.href = updateUrl(window.location.href); //不传参，默认是“t”
             });
 
             $("#volDilutionBtn").click(function () {
