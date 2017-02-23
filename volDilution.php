@@ -68,13 +68,11 @@
 
         <!--jQuery-->
         <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
-        <!--Custom JS code-->
-<!--        <script type="text/javascript" src="js/AndroidWechatReload.js"></script>-->
 
         <script>
 
             $('#reloadBtn').click(function () {
-                window.location.href=window.location.href;
+                window.location.reload(true);
             });
 
             $("#volDilutionBtn").click(function () {
