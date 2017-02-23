@@ -1,8 +1,9 @@
 function isAndroidWechat() {
     // 第一个条件用来判断是否为Android系统，第二个用来判断是否为微信
-    return (/android/.test(navigator.userAgent.toLowerCase()) &&
-    /micromessenger/.test(navigator.userAgent.toLowerCase()));
+    return (/android/.test(window.navigator.userAgent.toLowerCase()) &&
+    /micromessenger/.test(window.navigator.userAgent.toLowerCase()));
 }
+
 function updateURL(url, args, hash) {
     // 时间戳参数，默认是"t"
     let key = (args || 't') + '=';
