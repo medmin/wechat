@@ -69,11 +69,13 @@
         <!--jQuery-->
         <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
         <!--Custom JS code-->
-        <script type="text/javascript" src="js/AndroidWechatReload.js"></script>
+<!--        <script type="text/javascript" src="js/AndroidWechatReload.js"></script>-->
 
         <script>
 
-            $('#reloadBtn').click(reloadPage());
+            $('#reloadBtn').click(function () {
+                window.location.href=window.location.href;
+            });
 
             $("#volDilutionBtn").click(function () {
                 var motherSolutionC = $("#motherSolutionC").val();
