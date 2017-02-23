@@ -78,19 +78,15 @@
         <button type="button" id="soluteWeightCalculatorBtn" class="weui-btn weui-btn_primary">计算</button>
         <button type="button" id="reloadBtn" class="weui-btn weui-btn_default">刷新</button>
 
-
-        <!--VueJS-->
-<!--        <script type="text/javascript" src="js/vue.js"></script>-->
         <!--jQuery-->
         <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
-
-        <!--Bootstrap JS-->
-        <!--<script type="text/javascript" src="css/bootstrap-3.3.0/js/bootstrap.js"></script>-->
+        <!--Custom JS-->
+        <script type="text/javascript" src="js/AndroidWechatReload.js"></script>
 
 		<script type="text/javascript">
 
             $('#reloadBtn').click(function () {
-                window.location.reload(true);
+                window.location.href = updateUrl(window.location.href);
             });
 
 

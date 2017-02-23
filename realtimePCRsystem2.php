@@ -111,11 +111,12 @@
 
 <!--JQuery-->
 <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+<!--Custom JS-->
+<script type="text/javascript" src="js/AndroidWechatReload.js"></script>
 
 <script>
     $("#PCRsystemReloadBtn").click(function () {
-        // Reload the current page, without using the cache
-        window.location.reload(true);
+        window.location.href = updateUrl(window.location.href);
     });
 
     $("#PCRsystemBtn").click(function () {

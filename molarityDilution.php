@@ -101,10 +101,12 @@
 
     <!--jQuery-->
     <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <!--Custom JS-->
+    <script type="text/javascript" src="js/AndroidWechatReload.js"></script>
 
     <script>
         $('#ReloadBtn').click(function () {
-            window.location.reload(true);
+            window.location.href = updateUrl(window.location.href);
         });
 
         $("#molarityDilutionCalBtn").click(function () {
