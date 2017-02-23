@@ -43,9 +43,9 @@ function reloadPage() {
         // 先添加时间戳
         location.href = updateURL(location.href);
         // 然后强制刷新
-        location.reload(true);
+        window.location.reload(true);
     } else {
         // 直接强制刷新
-        location.reload(true);
+        window.location.reload(true);
     }
 }
