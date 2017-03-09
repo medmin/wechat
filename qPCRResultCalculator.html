@@ -1,0 +1,52 @@
+<html>
+<header>
+<title>qPCR结果计算器</title>
+<!--
+Project2：qPCR结果计算：
+
+步骤1：用户要设置一个表格的行和列，然后生成对应的表格，然后用户把数据填进去。行和列的数量不定，甚至多至好几百。
+
+步骤2：设置分组，每n行一组
+
+步骤3：然后每一列根据行的分组，计算平均值。
+
+步骤4：下面再应用一个公式来做计算。最后得出一个值。
+-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="css/qPCRResultCalculator.css" rel="stylesheet" type="text/css"/>
+<script src="./js/jquery-1.7.2.min.js"></script>
+<script src="js/qPCRResultCalculator.js"></script>
+<script src="./layer/layer.js"></script>
+<script>layer.ready(function(){});</script>
+</header>
+<body>
+<div class="top">
+<div class="field">
+<input type="text" maxlength="3" class="text data-number" id="geneNums" placeholder="基因数">
+<input type="text" maxlength="3" class="text data-number" id="testNums" placeholder="实验组数">
+<input type="text" maxlength="3" class="text data-number" id="refNums" placeholder="对照组数">
+<input type="text" maxlength="3" class="text data-number" id="repeatNums" placeholder="重复次数">
+
+<button  id="buildTable" >生成表格</button>
+<button  id="delTable" >删除表格</button>
+<button  id="calcResult" >计算结果</button>
+
+</div>
+</div>
+<div class="main">
+	<div class="data-field">
+	<div id="columnHeader" class='columnHeader'></div>
+		<div>
+			<div id="rowHeader" class='rowHeader'></div>
+				<table id="dataTable" class="data-table">
+			<!--Area-->
+				</table>
+		</div>
+	</div>
+</div>
+<div class="cover-left"></div>
+<div class="cover-top"></div>
+<div class="cover-cell"></div>
+<br>
+</body>
+</html>
