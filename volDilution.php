@@ -78,9 +78,9 @@
             });
 
             $("#volDilutionBtn").click(function () {
-                var motherSolutionC = $("#motherSolutionC").val();
-                var workingSolutionC = $("#workingSolutionC").val();
-                var workingSolutionV = $("#workingSolutionV").val();
+                var motherSolutionC = parseFloat($("#motherSolutionC").val());
+                var workingSolutionC = parseFloat($("#workingSolutionC").val());
+                var workingSolutionV = parseFloat($("#workingSolutionV").val());
 
                 if ( $.isNumeric(motherSolutionC) &&　$.isNumeric(workingSolutionC) && $.isNumeric(workingSolutionV)){
                     if ( motherSolutionC > workingSolutionC ) {

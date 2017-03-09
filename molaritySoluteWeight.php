@@ -91,10 +91,10 @@
 
 
 			$("#soluteWeightCalculatorBtn").click(function(){
-				var soluteMW = $("#soluteMW").val();
-				var purity = $("#purity").val();
-				var solutionVol = $("#solutionVol").val();
-				var solutionMolarity = $("#solutionMolarity").val();
+				var soluteMW = parseFloat($("#soluteMW").val());
+				var purity = parseFloat($("#purity").val());
+				var solutionVol = parseFloat($("#solutionVol").val());
+				var solutionMolarity = parseFloat($("#solutionMolarity").val());
 
 				if ( $.isNumeric(soluteMW) && $.isNumeric(purity) && $.isNumeric(solutionVol) && $.isNumeric(solutionMolarity) ){
                     $.post("molaritySoluteWeightCalculator.php",

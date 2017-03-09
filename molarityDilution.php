@@ -110,9 +110,9 @@
         });
 
         $("#molarityDilutionCalBtn").click(function () {
-            var motherSolutionMolarityC = $("#motherSolutionMolarityC").val();
-            var workingSolutionMolarityC = $("#workingSolutionMolarityC").val();
-            var workingSolutionMolarityV = $("#workingSolutionMolarityV").val();
+            var motherSolutionMolarityC = parseFloat($("#motherSolutionMolarityC").val());
+            var workingSolutionMolarityC = parseFloat($("#workingSolutionMolarityC").val());
+            var workingSolutionMolarityV = parseFloat($("#workingSolutionMolarityV").val());
 
             if ( $.isNumeric(motherSolutionMolarityC) && $.isNumeric(workingSolutionMolarityC) && $.isNumeric(workingSolutionMolarityV) ) {
                 if (motherSolutionMolarityC > workingSolutionMolarityC){
