@@ -74,9 +74,7 @@
         </div>
     </div>
     <div class="weui-cell">
-        <p class="colorRed">温馨提示：1、请注意计量单位；</p>
-        <p class="colorGreen">2、如果浓度单位选择g/L，可不填写分子量；</p>
-        <p class="colorRed">3、请注意本计算器假设溶质溶解后体积为零，可以满足一般实验要求，如果要求精确，请使用容量瓶定容。</p>
+        <p class="colorRed">温馨提示：1、请注意计量单位；2、如果浓度单位选择g/L，可不填写分子量；3、请注意本计算器假设溶质溶解后体积为零，可以满足一般实验要求，如果要求精确，请使用容量瓶定容。</p>
     </div>
 </form>
 <button type="button" id="solventVolCalBtn" class="weui-btn weui-btn_primary">计算</button>
