@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>qPCR Primer Design v1.0</title>
+    <title>科研小保姆</title>
     <style>
         .colorRed {
             color : red;
@@ -12,6 +12,7 @@
     </style>
 </head>
 <body>
+    <h2 class="weui-btn weui-btn_primary">qPCR引物设计v1.0</h2>
     <form action="qPCRPrimerDesignAPI.php" method="post">
         <textarea name="geneSeq" id="geneSeq" cols="30" rows="10" placeholder="请输入基因序列"></textarea>
         <br>
@@ -34,7 +35,7 @@
                         geneSeq : geneSeq,
                     },
                     function (result) {
-                        $("#PrimerDetails").text(result);
+                        $("#PrimerDetails").text(result).addClass('colorGreen');
                     }
                 );
             }

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>乐睿实验助手</title>
+    <title>科研小保姆</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
     <link rel="stylesheet" href="css/weui.min.css" />
     <style>
@@ -16,7 +16,7 @@
 </head>
 <body>
 <div>
-    <h2 class="weui-btn weui-btn_primary">溶液配制II：qPCR体系</h2>
+    <h2 class="weui-btn weui-btn_primary">qPCR体系配制</h2>
     <form id="RealTimePCRForm" method="post" action="realtimePCRsystemCalculator2.php">
         <div class="weui-cell weui-cells__title colorRed">
             Step I: Choose the type of your PCR machine:

@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>稀释计算器I：摩尔浓度</title>
+    <title>科研小保姆</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
     <link rel="stylesheet" href="css/weui.min.css" />
     <style>
@@ -26,7 +26,7 @@
             <div class="weui-cell__ft">
                 <label class="weui-label">
 <!--                    <select class="weui-select">-->
-<!--                        <option value="ms_C_default">选择单位</option>-->
+<!--                        <option value="ms_C_default">浓度单位</option>-->
 <!--                        <option value="ms_M">mol/L (M)</option>-->
 <!--                        <option value="ms_mM">mmol/L (mM)</option>-->
 <!--                        <option value="ms_uM">μmol/L (μM)</option>-->

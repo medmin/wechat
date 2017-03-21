@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>乐睿实验助手</title>
+		<title>科研小保姆</title>
         <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
         <link rel="stylesheet" href="css/weui.min.css" />
         <style>
