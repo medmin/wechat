@@ -74,7 +74,7 @@
         </div>
     </div>
     <div class="weui-cell">
-        <p class="colorRed">温馨提示：1、请注意计量单位；2、如果浓度单位选择g/L，可不填写分子量；3、请注意本计算器假设溶质溶解后体积为零，可以满足一般实验要求，如果要求精确，请使用容量瓶定容。</p>
+        <p class="colorRed">温馨提示：1、请注意计量单位；2、如果浓度单位选择g/L，分子量请填写任意大于0的数字；3、请注意本计算器假设溶质溶解后体积为零，可以满足一般实验要求，如果要求精确，请使用容量瓶定容。</p>
     </div>
 </form>
 <button type="button" id="solventVolCalBtn" class="weui-btn weui-btn_primary">计算</button>
@@ -92,13 +92,13 @@
 
     $("#solventVolCalBtn").click(function () {
         var finalC = parseFloat($("#finalC").val());
-        var soluteMW = parseFloat($("#soluteMW").val());
+        var soluteMW = parseFloat($('#soluteMW').val());
         var soluteWeight = parseFloat($("#soluteWeight").val());
 
         var finalCUnit = $('#finalCUnit').val();
 
 
-        if ( finalC > 0 && soluteMW > 0  && soluteWeight > 0 ) {
+        if ( finalC > 0 && soluteMW > 0 && soluteWeight > 0 ) {
 
             if (finalCUnit == 'fc_default'){
                 $("#solventVol").text("请选择浓度单位！").addClass("colorRed");
