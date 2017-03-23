@@ -35,7 +35,7 @@
     </div>
     <div class="weui-cell">
         <div class="weui-cell__hd">
-            <label class="weui-label">溶质分子量</label>
+            <label class="weui-label">标准分子量</label>
         </div>
         <div class="weui-cell__bd">
             <input type="number" id="soluteMW" class="weui-input" placeholder="分子量">
@@ -74,7 +74,7 @@
         </div>
     </div>
     <div class="weui-cell">
-        <p class="colorRed">温馨提示：1、请注意计量单位；2、如果浓度单位选择g/L，分子量请填写任意大于0的数字；3、请注意本计算器假设溶质溶解后体积为零，可以满足一般实验要求，如果要求精确，请使用容量瓶定容。</p>
+        <p class="colorRed">温馨提示：1、请注意计量单位；2、如果浓度单位选择g/L，分子量可填写任意大于0的数字；</p>
     </div>
 </form>
 <button type="button" id="solventVolCalBtn" class="weui-btn weui-btn_primary">计算</button>

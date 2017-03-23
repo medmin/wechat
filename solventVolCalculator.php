@@ -8,7 +8,7 @@ $soluteWeight = isset($_POST['soluteWeight']) ? $_POST['soluteWeight'] : false ;
 $solventVol =  function ($finalC, $finalCUnit,$soluteMW, $soluteWeight){
     if ( $finalCUnit == 'fc_mol') {
         $solventVol = $soluteWeight * 1000 / ($soluteMW * $finalC);
-        $solventVol = number_format($solventVol, 2);
+        $solventVol = number_format($solventVol, 4);
     }
     else if ($finalCUnit == 'fc_gram') {
         $solventVol = $soluteWeight * 1000 / $finalC;
