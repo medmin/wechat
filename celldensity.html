@@ -1,0 +1,112 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>科研小保姆</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="stylesheet" href="css/weui.min.css" />
+    <style>
+        .colorRed {
+            color : red;
+        }
+        .colorGreen {
+            color : green;
+        }
+    </style>
+</head>
+<body>
+<h2 class="weui-btn weui-btn_primary">稀释计算器III：细胞密度</h2>
+<form id="molarityVolForm">
+    <div class="weui-cell">
+        <div class="weui-cell__hd">
+            <label class="weui-label">细胞密度</label>
+        </div>
+        <div class="weui-cell__bd">
+            <input type="number" id="cellDensity" class="weui-input" placeholder="细胞密度">
+        </div>
+        <div class="weui-cell__ft">
+            <label class="weui-label colorGreen">
+                <strong>个/ml</strong>
+            </label>
+        </div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd">
+            <label class="weui-label">细胞密度</label>
+        </div>
+        <div class="weui-cell__bd">
+            <p id="cellDensityScientificNotation"></p>
+        </div>
+        <div class="weui-cell__ft">
+            <label class="weui-label colorGreen">
+                <strong>个/ml</strong>
+            </label>
+        </div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd">
+            <label class="weui-label">细胞个数</label>
+        </div>
+        <div class="weui-cell__bd">
+            <input type="number" id="cellNumbers" class="weui-input" placeholder="细胞个数">
+        </div>
+        <div class="weui-cell__ft">
+            <label class="weui-label colorGreen">
+                <strong>个</strong>
+            </label>
+        </div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd">
+            <label class="weui-label">细胞悬浊液体积</label>
+        </div>
+        <div class="weui-cell__bd">
+            <p id="cellSuspensionVol"></p>
+        </div>
+        <div class="weui-cell__ft">
+            <label class="weui-label colorGreen">
+                <strong>ml</strong>
+            </label>
+        </div>
+    </div>
+    <div class="weui-cell">
+        <p class="colorRed">温馨提示：请注意计量单位，自行换算到要求的单位</p>
+    </div>
+</form>
+<button type="button" id="cellDensityBtn" class="weui-btn weui-btn_primary">计算</button>
+<button type="button" id="ReloadBtn" class="weui-btn weui-btn_default">刷新</button>
+
+<!--jQuery-->
+<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+<!--Custom JS-->
+<script type="text/javascript" src="js/AndroidWechatReload.js"></script>
+
+<script>
+//    var cellDensity =parseInt($("#cellDensity").val());
+
+
+    $('#cellDensity').keyup(function () {
+        let cellDensity =parseInt($("#cellDensity").val());
+        let cellDnesitySN = cellDensity.toExponential();
+        $('#cellDensityScientificNotation').text(cellDnesitySN.replace('e+', '×10^'));
+    })
+
+    $('#ReloadBtn').click(function () {
+        window.location.href = updateUrl(window.location.href);
+    });
+
+    $("#cellDensityBtn").click(function () {
+        let cellDensity =parseInt($("#cellDensity").val());
+        let cellNumbers = parseInt($('#cellNumbers').val());
+
+        if (cellDensity > 0 ){
+
+            $('#cellSuspensionVol').text((cellNumbers / cellDensity).toFixed(4));
+        }
+        else {
+            $('#cellSuspensionVol').text('请输入恰当数字！').addClass('colorRed');
+        }
+
+    });
+</script>
+</body>
+</html>
